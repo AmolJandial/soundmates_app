@@ -12,7 +12,7 @@ final theme = ThemeData(
 );
 
 final _elevatedButtonTheme = ElevatedButtonThemeData(
-  style: ElevatedButton.styleFrom(backgroundColor: AppColors.secondaryButton),
+  style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryButton, shape: ShapeBorderX.rounded(8)),
 );
 
 final _filleldButtonTheme = FilledButtonThemeData(
