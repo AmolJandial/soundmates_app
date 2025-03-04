@@ -8,6 +8,9 @@ extension BuildContextX on BuildContext {
 
 extension WidgetX on Widget {
   Widget paddingAll(double padding) => Padding(padding: EdgeInsets.all(padding), child: this);
+  Widget paddingSymmetric({double h = 0, double v = 0}) =>
+      Padding(padding: EdgeInsets.symmetric(horizontal: h, vertical: v), child: this);
+  Widget maxWidth(double width) => SizedBox(width: width, child: this);
 }
 
 extension ShapeBorderX on ShapeBorder {
@@ -17,4 +20,6 @@ extension ShapeBorderX on ShapeBorder {
 
 extension TextStyleX on TextStyle {
   TextStyle withColor(Color color) => copyWith(color: color);
+  TextStyle get withBold => copyWith(fontWeight: FontWeight.bold);
+  TextStyle get withUnderline => copyWith(decoration: TextDecoration.underline);
 }

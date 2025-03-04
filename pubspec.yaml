@@ -33,4 +33,10 @@ flutter:
   uses-material-design: true
   assets:
     - .env
-    - assets/images/
+    - path: assets/images/error.png
+    - path: assets/images/background.svg
+      transformers:
+        - package: vector_graphics_compiler
+    - path: assets/images/onboarding.svg
+      transformers:
+        - package: vector_graphics_compiler

@@ -5,7 +5,7 @@ class AppTextTheme {
   const AppTextTheme._();
 
   static final appTextTheme = const TextTheme(
-    labelLarge: TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: AppColors.primaryTextColor),
-    bodyLarge: TextStyle(fontSize: 18, fontWeight: FontWeight.w400, color: AppColors.primaryTextColor),
+    labelLarge: TextStyle(color: AppColors.primaryTextColor),
+    bodyLarge: TextStyle(color: AppColors.primaryTextColor),
   );
 }

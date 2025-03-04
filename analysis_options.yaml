@@ -7,3 +7,4 @@ analyzer:
 linter:
   rules:
     prefer_const_constructors: true
+    avoid_unused_constructor_parameters: true

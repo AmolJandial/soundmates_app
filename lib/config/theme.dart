@@ -12,11 +12,21 @@ final theme = ThemeData(
 );
 
 final _elevatedButtonTheme = ElevatedButtonThemeData(
-  style: ElevatedButton.styleFrom(backgroundColor: AppColors.primaryButton, shape: ShapeBorderX.rounded(8)),
+  style: ElevatedButton.styleFrom(
+    backgroundColor: AppColors.primaryButton,
+    shape: ShapeBorderX.rounded(4),
+    padding: const EdgeInsets.all(16),
+    foregroundColor: AppColors.secondaryTextColor,
+    textStyle: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+  ),
 );
 
 final _filleldButtonTheme = FilledButtonThemeData(
   style: FilledButton.styleFrom(backgroundColor: AppColors.secondaryButton, shape: ShapeBorderX.rounded(8)),
 );
 
-final _appBarTheme = const AppBarTheme();
+final _appBarTheme = const AppBarTheme(
+  backgroundColor: AppColors.backgroundColor,
+  elevation: 0,
+  scrolledUnderElevation: 0,
+);
